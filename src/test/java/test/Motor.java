@@ -7,14 +7,17 @@ public class Motor {
 
     public int cambiarRegistro(int argumento) {
         this.registro = argumento;
+        return argumento;
     }
 
-    public void asignarTipo(String argumento) {
+    public String asignarTipo(String argumento) {
         if (argumento.equals("electrico")) {
             tipo = "electrico";
         } else if (argumento.equals("gasolina")) {
             tipo = "gasolina";
         } else {
+            return tipo=tipo;
         }
+        return null;
     }
 }
