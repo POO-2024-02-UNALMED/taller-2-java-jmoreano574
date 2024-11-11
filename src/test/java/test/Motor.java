@@ -11,9 +11,9 @@ public class Motor {
 
     public void asignarTipo(String argumento) {
         if (argumento.equals("electrico")) {
-            this.tipo = argumento;
+            tipo = argumento;
         } else if (argumento.equals("gasolina")) {
-            this.tipo = argumento;
+            tipo = argumento;
         } else {
         }
     }
