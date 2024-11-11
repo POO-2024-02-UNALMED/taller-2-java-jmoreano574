@@ -6,20 +6,14 @@ public class Asiento {
     int precio;
     int registro;
 
-    public void cambiarColor(String argumento) {
-        if (argumento.equals("rojo")) {
-            color = "rojo";
-        } else if (argumento.equals("verde")) {
-            color = "verde";
-        } else if (argumento.equals("amarillo")) {
-            color = "amarillo";
-        } else if (argumento.equals("negro")) {
-            color = "negro";
-        } else if (argumento.equals("blanco")) {
-            color = "blanco";
-        } else {
-            // Es innecesario asignar color = color; aquí, ya que no cambia nada.
+    String cambiarColor(String argumento) 
+    {
+        if (argumento.equals("rojo") || argumento.equals("verde") || argumento.equals("amarillo") || argumento.equals("negro") || argumento.equals("blanco"))
+        {
+            return this.color=argumento;
+        } else{
+            return color;
         }
     }
-}
 
+}
