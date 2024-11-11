@@ -10,13 +10,14 @@ public class Motor {
         return argumento;
     }
 
+    @SuppressWarnings("ConvertToStringSwitch")
     public String asignarTipo(String argumento) {
         if (argumento.equals("electrico")) {
             tipo = "electrico";
         } else if (argumento.equals("gasolina")) {
             tipo = "gasolina";
         } else {
-            return tipo=tipo;
+            return tipo;
         }
         return null;
     }
