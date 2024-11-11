@@ -1,26 +1,23 @@
 package test;
-import java.util.Arrays;
-import java.util.List;
 
 public class Motor {
-    private static final List<String> tiposPosibles = Arrays.asList("electrico", "gasolina");
-    private int numeroCilindros;
-    private String tipo;
-    private int registro;
+    int numeroCilindros;
+    String tipo;
+    int registro;
 
-    public Motor(int numeroCilindros, String tipo, int registro) {
-        this.numeroCilindros = numeroCilindros;
-        this.tipo = tipo;
-        this.registro = registro;
+    public int cambiarRegistro(int argumento) {
+        this.registro = argumento;
+        return argumento;
     }
 
-    public void cambiarRegistro(int registro) {
-        this.registro = registro;
-    }
-
-    public void asignarTipo(String tipo) {
-        if (tiposPosibles.contains(tipo)) {
-            this.tipo = tipo;
+    public String asignarTipo(String argumento) {
+        if(argumento.equals("electrico")) {
+            tipo = "electrico";
+        } else if (argumento.equals("gasolina")) {
+            tipo = "gasolina";
+        } else {
+            return tipo;
         }
+        return null;
     }
 }
