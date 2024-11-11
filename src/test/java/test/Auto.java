@@ -1,7 +1,5 @@
 package test;
 
-import java.util.ArrayList;
-
 public class Auto {
     String modelo;
     int precio;
@@ -9,13 +7,12 @@ public class Auto {
     String marca;
     Motor motor;
     int registro;
-    static int cantidadCreados;
 
     public int cantidadAsientos() {
         int contador = 0;  
 
-        for (int i = 0; i < asientos.length; i++) {
-            if (asientos[i] != null) { 
+        for (Asiento asiento : asientos) {
+            if (asiento != null) { 
                 contador++;
             }
         }
