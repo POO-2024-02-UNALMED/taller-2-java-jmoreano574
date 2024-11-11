@@ -5,8 +5,8 @@ public class Motor {
     String tipo;
     int registro;
 
-    public void cambiarRegistro(int argumento) {
-        registro = argumento;
+    public int cambiarRegistro(int argumento) {
+        this.registro = argumento;
     }
 
     public void asignarTipo(String argumento) {
