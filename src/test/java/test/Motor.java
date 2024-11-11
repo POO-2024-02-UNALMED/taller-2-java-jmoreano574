@@ -11,12 +11,12 @@ public class Motor {
     }
 
     public String asignarTipo(String argumento) {
-        if(argumento.equals("electrico")) {
-            tipo = "electrico";
-        } else if (argumento.equals("gasolina")) {
-            tipo = "gasolina";
-        } else {
-            return tipo;
+        switch (argumento) {
+            case "electrico" -> tipo = "electrico";
+            case "gasolina" -> tipo = "gasolina";
+            default -> {
+                return tipo;
+            }
         }
         return null;
     }
